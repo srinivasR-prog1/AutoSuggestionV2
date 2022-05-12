@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="AutoSuggestApp" thread-count="2" parallel="tests">
+	<test name="GoogleHomeTest">
+		<parameter name="browser" value="chrome" />
+		<parameter name="keyword" value="docker" />
+		<parameter name="indexvalue" value="docker compose" />
+		<classes>
+			<class name="com.autoSuggestV2.testCases.TC_GoogleHomeTest_001" />
+		</classes>
+	</test>
+	<test name="SearchTest">
+		<parameter name="browser" value="firefox" />
+		<parameter name="keyword" value="docker" />
+		<parameter name="indexvalue" value="docker compose" />
+		<parameter name="searchValue" value="Localhost" />
+		<classes>
+			<class name="com.autoSuggestV2.testCases.TC_SearchTest_001" />
+		</classes>
+	</test>
+</suite>

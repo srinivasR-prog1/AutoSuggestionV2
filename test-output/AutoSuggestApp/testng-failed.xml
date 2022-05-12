@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="2" guice-stage="DEVELOPMENT" name="Failed suite [AutoSuggestApp]" parallel="tests">
+  <parameter name="browser" value="firefox"/>
+  <parameter name="indexvalue" value="docker compose"/>
+  <parameter name="keyword" value="docker"/>
+  <parameter name="searchValue" value="Localhost"/>
+  <test name="GoogleHomeTest">
+    <parameter name="browser" value="chrome"/>
+    <parameter name="indexvalue" value="docker compose"/>
+    <parameter name="keyword" value="docker"/>
+    <classes>
+      <class name="com.autoSuggestV2.testCases.TC_GoogleHomeTest_001"/>
+    </classes>
+  </test> <!-- GoogleHomeTest -->
+  <test name="SearchTest">
+    <parameter name="browser" value="firefox"/>
+    <parameter name="indexvalue" value="docker compose"/>
+    <parameter name="keyword" value="docker"/>
+    <parameter name="searchValue" value="Localhost"/>
+    <classes>
+      <class name="com.autoSuggestV2.testCases.TC_SearchTest_001"/>
+    </classes>
+  </test> <!-- SearchTest -->
+  <test name="SearchTest(failed)" parallel="tests">
+    <parameter name="browser" value="firefox"/>
+    <parameter name="indexvalue" value="docker compose"/>
+    <parameter name="keyword" value="docker"/>
+    <parameter name="searchValue" value="Localhost"/>
+    <classes>
+      <class name="com.autoSuggestV2.testCases.TC_GoogleHomeTest_001">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.autoSuggestV2.testCases.TC_GoogleHomeTest_001 -->
+      <class name="com.autoSuggestV2.testCases.TC_SearchTest_001">
+        <methods>
+          <include name="tearDown"/>
+          <include name="searchPageTest"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.autoSuggestV2.testCases.TC_SearchTest_001 -->
+    </classes>
+  </test> <!-- SearchTest(failed) -->
+  <test name="GoogleHomeTest(failed)" parallel="tests">
+    <parameter name="browser" value="chrome"/>
+    <parameter name="indexvalue" value="docker compose"/>
+    <parameter name="keyword" value="docker"/>
+    <classes>
+      <class name="com.autoSuggestV2.testCases.TC_GoogleHomeTest_001">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+          <include name="HomepageTest"/>
+        </methods>
+      </class> <!-- com.autoSuggestV2.testCases.TC_GoogleHomeTest_001 -->
+      <class name="com.autoSuggestV2.testCases.TC_SearchTest_001">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.autoSuggestV2.testCases.TC_SearchTest_001 -->
+    </classes>
+  </test> <!-- GoogleHomeTest(failed) -->
+</suite> <!-- Failed suite [AutoSuggestApp] -->

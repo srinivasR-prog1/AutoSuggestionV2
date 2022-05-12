@@ -1,0 +1,5 @@
+com\autoSuggestV2\testCases\TC_GoogleHomeTest_001.class
+com\autoSuggestV2\pageObject\GoogleSearchResultPage.class
+com\autoSuggestV2\testCases\BaseClass.class
+com\autoSuggestV2\testCases\TC_SearchTest_001.class
+com\autoSuggestV2\pageObject\GoogleHomePage.class
