@@ -2,12 +2,12 @@
 <testng-results skipped="0" failed="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="AutoSuggestApp" duration-ms="13842" started-at="2022-05-11T15:16:03Z" finished-at="2022-05-11T15:16:17Z">
+  <suite name="AutoSuggestApp" duration-ms="60554" started-at="2022-05-13T12:07:57Z" finished-at="2022-05-13T12:08:57Z">
     <groups>
     </groups>
-    <test name="GoogleHomeTest" duration-ms="8519" started-at="2022-05-11T15:16:03Z" finished-at="2022-05-11T15:16:12Z">
+    <test name="GoogleHomeTest" duration-ms="53353" started-at="2022-05-13T12:07:57Z" finished-at="2022-05-13T12:08:50Z">
       <class name="com.autoSuggestV2.testCases.TC_GoogleHomeTest_001">
-        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:com.autoSuggestV2.testCases.TC_GoogleHomeTest_001@66d33a]" name="setUp" is-config="true" duration-ms="5333" started-at="2022-05-11T15:16:03Z" finished-at="2022-05-11T15:16:09Z">
+        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:com.autoSuggestV2.testCases.TC_GoogleHomeTest_001@66d33a]" name="setUp" is-config="true" duration-ms="37937" started-at="2022-05-13T12:07:57Z" finished-at="2022-05-13T12:08:35Z">
           <params>
             <param index="0">
               <value>
@@ -18,7 +18,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="HomepageTest(java.lang.String, java.lang.String)[pri:0, instance:com.autoSuggestV2.testCases.TC_GoogleHomeTest_001@66d33a]" name="HomepageTest" duration-ms="2911" started-at="2022-05-11T15:16:09Z" finished-at="2022-05-11T15:16:12Z">
+        <test-method status="PASS" signature="HomepageTest(java.lang.String, java.lang.String)[pri:0, instance:com.autoSuggestV2.testCases.TC_GoogleHomeTest_001@66d33a]" name="HomepageTest" duration-ms="15203" started-at="2022-05-13T12:08:35Z" finished-at="2022-05-13T12:08:50Z">
           <params>
             <param index="0">
               <value>
@@ -34,15 +34,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- HomepageTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.autoSuggestV2.testCases.TC_GoogleHomeTest_001@66d33a]" name="tearDown" is-config="true" duration-ms="258" started-at="2022-05-11T15:16:12Z" finished-at="2022-05-11T15:16:12Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.autoSuggestV2.testCases.TC_GoogleHomeTest_001@66d33a]" name="tearDown" is-config="true" duration-ms="200" started-at="2022-05-13T12:08:50Z" finished-at="2022-05-13T12:08:50Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.autoSuggestV2.testCases.TC_GoogleHomeTest_001 -->
     </test> <!-- GoogleHomeTest -->
-    <test name="SearchTest" duration-ms="13842" started-at="2022-05-11T15:16:03Z" finished-at="2022-05-11T15:16:17Z">
+    <test name="SearchTest" duration-ms="60554" started-at="2022-05-13T12:07:57Z" finished-at="2022-05-13T12:08:57Z">
       <class name="com.autoSuggestV2.testCases.TC_SearchTest_001">
-        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:com.autoSuggestV2.testCases.TC_SearchTest_001@e580929]" name="setUp" is-config="true" duration-ms="8120" started-at="2022-05-11T15:16:03Z" finished-at="2022-05-11T15:16:11Z">
+        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:com.autoSuggestV2.testCases.TC_SearchTest_001@e580929]" name="setUp" is-config="true" duration-ms="53624" started-at="2022-05-13T12:07:57Z" finished-at="2022-05-13T12:08:50Z">
           <params>
             <param index="0">
               <value>
@@ -53,7 +53,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="searchPageTest(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.autoSuggestV2.testCases.TC_SearchTest_001@e580929]" name="searchPageTest" duration-ms="4885" started-at="2022-05-11T15:16:11Z" finished-at="2022-05-11T15:16:16Z">
+        <test-method status="PASS" signature="searchPageTest(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.autoSuggestV2.testCases.TC_SearchTest_001@e580929]" name="searchPageTest" duration-ms="6202" started-at="2022-05-13T12:08:50Z" finished-at="2022-05-13T12:08:56Z">
           <params>
             <param index="0">
               <value>
@@ -74,7 +74,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- searchPageTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.autoSuggestV2.testCases.TC_SearchTest_001@e580929]" name="tearDown" is-config="true" duration-ms="834" started-at="2022-05-11T15:16:16Z" finished-at="2022-05-11T15:16:17Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.autoSuggestV2.testCases.TC_SearchTest_001@e580929]" name="tearDown" is-config="true" duration-ms="724" started-at="2022-05-13T12:08:56Z" finished-at="2022-05-13T12:08:57Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

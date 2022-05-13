@@ -24,7 +24,8 @@ public class BaseClass {
 	@BeforeTest
 	public void setUp(String br) throws MalformedURLException
 	{
-		String host="selenium-hub";
+	    String host="selenium-hub";
+	//101	String host="localhost";
 		DesiredCapabilities dc= new DesiredCapabilities();
 		if(br.equalsIgnoreCase("chrome"))
 		{
@@ -55,7 +56,7 @@ public class BaseClass {
 			host="selenium-hub";
 			
 		}*/
-		String completeURL="http://"+host+":4444/wd/hub";
+		String completeURL="http://"+host+":4444/wd/hub";		
 		System.out.println(completeURL);
  		driver=new RemoteWebDriver(new URL(completeURL), dc);
 		driver.manage().window().maximize();
